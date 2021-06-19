@@ -1,0 +1,121 @@
+.navbar {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    height: 60px;
+    line-height: 60px;
+    background-color: orange;
+    opacity: 100%;
+}
+
+.menu {
+    margin: 0 50px 0 0;
+}
+
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: #080808;
+    margin: 0 20px;
+    font-size: 20px;
+    transition: .1s;
+}
+
+.menu a.active,
+.menu a:hover {
+    color: #009e8e;
+}
+
+label {
+    color: #444444;
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 60px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .logo {
+        float: left;
+        width: 150px;
+        height: auto;
+        padding-top: 6px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        margin: 0;
+        border-bottom: 1px solid #009e8e;
+        ;
+    }
+    #toggle:checked+.menu {
+        display: block;
+        background-color: orange;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    .logo {
+        float: left;
+        width: 200px;
+        height: auto;
+        padding-top: 6px;
+        padding-bottom: 5px;
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .logo {
+        float: left;
+        width: 150px;
+        padding-top: 6px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .logo {
+        float: left;
+        width: 100px;
+        padding-top: 14px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        margin: 0;
+    }
+    #toggle:checked+.menu {
+        display: block;
+        background-color: orange;
+    }
+}
